@@ -1,4 +1,4 @@
-# Walmart-sales
+# Project Report
 
 **1. Project Overview**  
 This project performs Exploratory Data Analysis (EDA), Data Processing and Data cleaning on Walmart’s retail sales dataset using Python,  
@@ -138,12 +138,14 @@ where ranking = 1;
 ```
 ![](https://github.com/XeNoX36/Walmart-sales/blob/main/walmart/3.png)
 
+```sql
 -- 4. Calculate the total quantity of items sold per payment_method, list payment_method
 -- and total_quantity
 select payment_method, sum(quantity) no_of_qty_sold
 from walmart
 group by payment_method
 order by no_of_qty_sold desc;
+```
 ![](https://github.com/XeNoX36/Walmart-sales/blob/main/walmart/4.png)
 
 ```sql
